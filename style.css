@@ -243,8 +243,22 @@ a:hover {
 }
 
 /* media queries */
+
+/* .iphone13image css */
+/* @media screen and (min-width: 769px) {
+  display: none;
+} */
+
+/* mobile size */
 @media screen and (max-width: 480px) {
   .ipadcontainer {
+    width: 100%;
     flex-direction: column;
+  }
+  .iphone13image {
+    display: none;
+  }
+  img{
+    max-width: 100%;
   }
 }
