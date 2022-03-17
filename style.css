@@ -235,6 +235,7 @@ footer > ul > li > a {
 /* media queries */
 @media screen and (max-width: 480px) {
   .ipadcontainer {
+    width: 100%;
     flex-direction: column;
   }
 }
