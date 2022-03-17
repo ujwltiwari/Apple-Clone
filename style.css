@@ -238,5 +238,11 @@ footer > ul > li > a {
     width: 100%;
     flex-direction: column;
   }
+  .iphone13image {
+    display: none;
+  }
+  img{
+    max-width: 100%;
+  }
 }
 
