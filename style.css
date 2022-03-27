@@ -287,8 +287,12 @@ a:hover {
     padding: 20px;
   }
 
-  .main .display2{
+  .main .display2 {
     flex-direction: column;
+  }
+
+  .iphone13image {
+    display: none;
   }
 }
 
