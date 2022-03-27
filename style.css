@@ -4,20 +4,31 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   background-color: #333333;
   padding: 15px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .head-menu {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -90,7 +101,7 @@ header {
 }
 
 .ipadcontainer {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +175,7 @@ header {
 }
 
 .bottom {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-size: 13px;
@@ -228,7 +239,7 @@ footer > ul > li > a {
 
 .lasts {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -250,15 +261,76 @@ a:hover {
 } */
 
 /* mobile size */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .ipadcontainer {
     width: 100%;
     flex-direction: column;
+    padding: 50px;
   }
   .iphone13image {
     display: none;
   }
-  img{
+  img {
     max-width: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+  }
+
+  .head-menu {
+    width: 100%;
+  }
+
+  .bottom-menu{
+    padding: 0 1em;
+  }
+
+  .bottom-menu li{
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ipadcontainer {
+    width: 100%;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .iphone13image {
+    display: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+  }
+
+  .head-menu {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .ipadcontainer {
+    width: 100%;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .iphone13image {
+    display: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+  }
+
+  .head-menu {
+    width: 100%;
   }
 }
